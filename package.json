@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git"
   },
-  "homepage": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git",
+  "homepage": "https://thinkful-ei-tiger.github.io/james-bookmarks-app/",
   "devDependencies": {
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
@@ -26,11 +27,11 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.40.1",
     "webpack-cli": "^3.3.8",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "cuid": "^2.1.6",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1"
   }
 }

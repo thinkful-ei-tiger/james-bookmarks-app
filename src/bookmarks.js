@@ -21,7 +21,7 @@ const generateBookMarkHtml = function (bookmark) {
   let bookmarkRating = generateStarRating(bookmark);
   return `
       <div class="bookmark-condensed-container js-bookmark-condensed-container" data-item-id="${bookmark.id}">
-        <button class="expand-button js-expand-button">...</button>  
+        <button class="expand-button js-expand-button">Expand Me!</button>  
         <h2 class="bookmark-name js-bookmark-name">${bookmark.title}</h2>
         <div class="bookmark-rating js-bookmark-rating">
           ${bookmarkRating}
@@ -29,8 +29,8 @@ const generateBookMarkHtml = function (bookmark) {
         <div class="bookmark-expand js-bookmark-expand-container ${bookmarkExpand}">
           <p>Description: ${bookmark.desc}</p>
           <div class="actions">
-            <a class="bookmark-URL js-bookmark-URL" href=${bookmark.url} target="_blank">Visit Site!</a>
-            <button class="delete-button js-delete-button">Delete</button>
+            <a class="bookmark-URL js-bookmark-URL" href=${bookmark.url} target="_blank"><strong>Visit Site!</strong></a>
+            <button class="delete-button js-delete-button">Delete Me!</button>
           </div>
         </div>
       </div>
@@ -49,13 +49,13 @@ const generateBookmarkHeader = function () {
   $("#main").html(`
     
     <header role="banner">
-    <h1>Bookmark This</h1>
+    <h1>Little Bookmark App</h1>
   </header>
 <!-- BOOKMARKS CONTROLS-->
   <div class="main-container" role="main">
     <div class="flex-container">
       <section class="user-controls">
-        <button class="button-add js-button-add">+Add</button>
+        <button class="button-add js-button-add">+Add New Bookmark</button>
         <div class="filter-container">
           <label for="star-rating-filter">Filter by:</label>
           <select name="star-rating" id="star-rating-filter">
