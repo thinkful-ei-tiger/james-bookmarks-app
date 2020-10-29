@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thinkful-ei-heron/shopping-list-starter.git"
+    "url": "git+https://github.com/thinkful-ei-tiger/james-bookmarks-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thinkful-ei-heron/shopping-list-starter/issues"
+    "url": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git"
   },
-  "homepage": "https://github.com/thinkful-ei-heron/shopping-list-starter#readme",
+  "homepage": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git#readme",
   "devDependencies": {
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",

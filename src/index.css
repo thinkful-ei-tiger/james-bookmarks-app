@@ -85,7 +85,7 @@ h1 {
   padding: 3px, 7px, 3px, 5px;
   margin-top: 10px;
   margin-left: 10px;
-  box-shadow: 0 1px 0 1px lightgray;
+  box-shadow: 0 1px 0 1px whitesmoke;
 }
 
 .filter-container {
@@ -99,7 +99,7 @@ h1 {
   font-size: 16px;
   font-family: sans-serif;
   background-color: white;
-  box-shadow: 0 1px 0 1px lightgray;
+  box-shadow: 0 1px 0 1px whitesmoke;
 }
 
 .bookmark-condensed-container {
@@ -109,7 +109,7 @@ h1 {
   margin-bottom: 0px;
   margin-right: 5px;
   margin-left: 5px;
-  background-color: rgb(22, 191, 126);
+  background-color: palevioletred;
 }
 
 .bookmark-name {
@@ -124,7 +124,7 @@ h1 {
 }
 
 .checked {
-  color: orange;
+  color: whitesmoke;
 }
 
 .actions {
