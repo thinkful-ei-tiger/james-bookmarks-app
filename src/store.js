@@ -1,33 +1,72 @@
-const items = [];
-let hideCheckeditems = false;
+let bookmarks = [];
+let adding = false;
+let error = null;
+let filter = false;
+let filteredBookmarks = [];
 
-const findById = function (id) {
-  return this.items.find((currentItem) => currentItem.id === id);
+const addBookmark = function (bookmark) {
+  // adds expand locally
+  for (let i = 0; i < bookmarks.length; i++) {
+    if (bookmarks[i]) {
+      bookmarks[i].expand = false;
+    }
+  }
+  // adds bookmark to store
+  bookmarks.push(bookmark);
+  // toggles adding state
+  this.adding = false;
 };
 
-const addItem = function (item) {
-  this.items.push(item);
+const expandBookmark = function (id) {
+  //find id to expand
+  let expandedBookmark = bookmarks.find((bookmark) => bookmark.id === id);
+  //toggle expand value
+  if (expandedBookmark.expand) {
+    expandedBookmark.expand = false;
+  } else {
+    expandedBookmark.expand = true;
+  }
 };
 
-const findAndDelete = function (id) {
-  this.items = this.items.filter((currentItem) => currentItem.id !== id);
+const deleteBookmark = function (id) {
+  this.bookmarks = this.bookmarks.filter((bookmark) => bookmark.id !== id);
+};
+//toggle adding state in store
+const setAdding = function (param) {
+  this.adding = param;
 };
 
-const toggleCheckedFilter = function () {
-  this.hideCheckedItems = !this.hideCheckedItems;
+//filters bookmarks in store
+const filterBookmarks = function (filterNumber) {
+  this.filter = true;
+  this.bookmarks.forEach((bookmark) => {
+    if (bookmark.rating >= filterNumber) {
+      this.filteredBookmarks.push(bookmark);
+    }
+  });
 };
 
-const findAndUpdate = function (id, newData) {
-  const currentItem = this.findById(id);
-  Object.assign(currentItem, newData);
+//toggle filter state in store
+const setFiltering = function (param) {
+  this.filter = param;
+};
+
+//sets error
+const setError = function (errorMessage) {
+  this.error = errorMessage;
 };
 
 export default {
-  items,
-  hideCheckeditems,
-  findById,
-  addItem,
-  findAndDelete,
-  toggleCheckedFilter,
-  findAndUpdate,
+  bookmarks,
+  adding,
+  error,
+  filter,
+  addBookmark,
+  expandBookmark,
+  deleteBookmark,
+  setAdding,
+  setFiltering,
+  setError,
+  filterBookmarks,
+  filteredBookmarks,
 };
