@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git"
   },
-  "homepage": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git#readme",
+  "homepage": "https://github.com/thinkful-ei-tiger/james-bookmarks-app.git",
   "devDependencies": {
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
