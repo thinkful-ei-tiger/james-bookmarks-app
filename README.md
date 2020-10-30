@@ -27,6 +27,6 @@ I can select from a dropdown (a <select> element) a "minimum rating" to filter t
 
 ---
 
-This is [My Bookmark App](https://thinkful-ei-tiger.github.io/james-bookmarks-app/)
+This is <https://thinkful-ei-tiger.github.io/james-bookmarks-app>
 
 ---
