@@ -23,10 +23,6 @@ I can remove bookmarks from my bookmark list
 I receive appropriate feedback when I cannot submit a bookmark
 
 Check all validations in the API documentation (e.g. title and url field required)
-I can select from a dropdown (a <select> element) a "minimum rating" to filter the list by all bookmarks rated at or above the chosen selection.
+I can select from a dropdown (a select element) a "minimum rating" to filter the list by all bookmarks rated at or above the chosen selection.
 
----
-
-This is <https://thinkful-ei-tiger.github.io/james-bookmarks-app>
-
----
+\*[My App](https://thinkful-ei-tiger.github.io/james-bookmarks-app)
