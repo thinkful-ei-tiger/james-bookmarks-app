@@ -49,7 +49,7 @@ const generateBookmarkHeader = function () {
   $("#main").html(`
     
     <header role="banner">
-    <h1>Little Bookmark App</h1>
+    <h1>BookMark</h1>
   </header>
 <!-- BOOKMARKS CONTROLS-->
   <div class="main-container" role="main">
